@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Angular Routing</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body ng-app="profile-app">
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="">WebSiteName</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/showprofile">Show Profile</a></li>
+                        <li><a href="#/editprofile">Edit Profile</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+ <script src="js\lib\jquery-1.10.2.min.js"></script>
+ <script src="js\lib\bootstrap.min.js"></script> 
+ <script src="js\lib\angular.js"></script>
+ <script src="js\lib\angular-route.js"></script>
+ <script src="js\profile-app.js"></script>
+ <script src="js\Controllers\Profile\showProfileCtrl.js"></script>
+ <script src="js\Controllers\Profile\editProfileCtrl.js"></script>
+ <script src="js\Controllers\Home\404Ctrl.js"></script>
+    </body>
+</html>

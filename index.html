@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Angular Routing</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body ng-app="main-app">
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#/home">WebSiteName</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/home">Home</a></li>
+                        <li><a href="#/allposts">All Posts</a></li>
+                        <li><a href="/profilelayout.html">Profile</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+        <script src="js/lib/jquery-1.10.2.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/angular.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/Controllers/Home/mainCtrl.js"></script>
+        <script src="js/Services/Posts/posts-service.js"></script>
+        <script src="js/Services/Posts/get-post-service.js"></script>
+        <script src="js/Controllers/Posts/postsCtrl.js"></script>
+        <script src="js/Controllers/Posts/postDetailsCtrl.js"></script>
+        <script src="js/Controllers/Home/404Ctrl.js"></script>
+    </body>
+</html>
